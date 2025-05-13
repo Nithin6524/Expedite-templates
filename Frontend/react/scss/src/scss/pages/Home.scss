@@ -1,0 +1,186 @@
+@import "../base/variables";
+@import "../base/mixins";
+
+.home-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 $spacing-unit;
+  
+  // Hero Section
+  .hero-section {
+    text-align: center;
+    padding: $spacing-unit * 4 0;
+    margin-bottom: $spacing-unit * 3;
+    background: linear-gradient(135deg, lighten($primary-color, 35%), lighten($primary-color, 25%));
+    border-radius: 8px;
+    
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: darken($primary-color, 15%);
+      margin-bottom: $spacing-unit;
+      
+    
+    }
+    
+    .subtitle {
+      font-size: 1.2rem;
+      color: $dark-color;
+      margin-bottom: $spacing-unit * 2;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      
+   
+    }
+    
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: $spacing-unit;
+      flex-wrap: wrap;
+      
+      .btn {
+        padding: 0.75rem 1.5rem;
+        border-radius: 4px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        
+        &.btn-primary {
+          background-color: $primary-color;
+          color: white;
+          
+          &:hover {
+            background-color: darken($primary-color, 10%);
+            transform: translateY(-2px);
+          }
+        }
+        
+        &.btn-secondary {
+          background-color: $white;
+          color: $primary-color;
+          border: 2px solid $primary-color;
+          
+          &:hover {
+            background-color: rgba($primary-color, 0.1);
+            transform: translateY(-2px);
+          }
+        }
+      }
+    }
+  }
+  
+  // Features Section
+  .features-section {
+    margin-bottom: $spacing-unit * 3;
+    
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      color: $dark-color;
+      margin-bottom: $spacing-unit * 2;
+      position: relative;
+      
+      &:after {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 3px;
+        background-color: $primary-color;
+        margin: $spacing-unit auto 0;
+      }
+    }
+    
+    .features-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: $spacing-unit * 1.5;
+      
+      
+      
+      .feature-card {
+        background-color: $white;
+        border-radius: 8px;
+        padding: $spacing-unit * 1.5;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        
+        &:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-icon {
+          font-size: 2.5rem;
+          margin-bottom: $spacing-unit;
+        }
+        
+        h3 {
+          font-size: 1.2rem;
+          color: $dark-color;
+          margin-bottom: $spacing-unit * 0.5;
+        }
+        
+        p {
+          color: $secondary-color;
+          font-size: 0.95rem;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+  
+  // Getting Started Section
+  .getting-started-section {
+    margin-bottom: $spacing-unit * 4;
+    
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      color: $dark-color;
+      margin-bottom: $spacing-unit * 2;
+      position: relative;
+      
+      &:after {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 3px;
+        background-color: $primary-color;
+        margin: $spacing-unit auto 0;
+      }
+    }
+    
+    .code-block {
+      background-color: $dark-color;
+      border-radius: 8px;
+      padding: $spacing-unit * 1.5;
+      margin-bottom: $spacing-unit * 1.5;
+      overflow-x: auto;
+      
+      code {
+        color: $light-color;
+        font-family: 'Courier New', Courier, monospace;
+        
+        pre {
+          margin: 0;
+        }
+      }
+    }
+    
+    .help-text {
+      text-align: center;
+      color: $secondary-color;
+      font-size: 0.95rem;
+      
+      code {
+        background-color: lighten($secondary-color, 40%);
+        padding: 0.2rem 0.4rem;
+        border-radius: 4px;
+        font-family: 'Courier New', Courier, monospace;
+        color: $secondary-color;
+      }
+    }
+  }
+}

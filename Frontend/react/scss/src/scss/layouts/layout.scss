@@ -1,0 +1,15 @@
+@import "../base/variables";
+@import "../base/mixins";
+
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: $background-color;
+  
+  .main-content {
+    flex: 1;
+    padding: $spacing-unit 0;
+    
+  }
+}
