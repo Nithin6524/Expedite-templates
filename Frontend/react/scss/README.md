@@ -7,7 +7,7 @@ A modern, production-ready React template with SCSS styling support.
 - React with SCSS styling
 - Responsive layout
 - Routing with React Router
-- API client with Axios
+- API client 
 - Bootstrap integration (optional)
 - Clean folder structure
 - Component organization
@@ -21,7 +21,7 @@ A modern, production-ready React template with SCSS styling support.
 │   ├── Layout/         # Layout components
 │   ├── Pages/          # Page components
 │   ├── services/       # API services
-│   │   └── apiClient.js # Axios API client
+│   │   └── apiClient.js # API client
 │   ├── scss/           # SCSS files
 │   │   ├── base/       # Base styles, variables, mixins
 │   │   │   ├── _mixins.scss
