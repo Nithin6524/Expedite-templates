@@ -1,0 +1,16 @@
+// Base styles
+@import "./base/reset";
+@import "./base/variables";
+@import "./base/mixins";
+
+// Layout styles
+@import "./layouts/layout";
+
+// Component styles
+@import "./components/Footer";
+
+// Page styles
+@import "./pages/Home";
+
+// Import Bootstrap (optional)
+// @import '~bootstrap/scss/bootstrap.scss';
