@@ -121,6 +121,6 @@ The template uses React Router for navigation:
 
 ## Adding New Pages
 
-1. Create a new component in the `src/Pages/` directory
+1. Create a new Page in the `src/Pages/` directory
 2. Add styles in `src/scss/pages/`
 3. Add a route in `App.js`
