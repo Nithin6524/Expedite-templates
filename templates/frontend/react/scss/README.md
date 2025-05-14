@@ -7,7 +7,7 @@ A modern, production-ready React template with SCSS styling support.
 - React with SCSS styling
 - Responsive layout
 - Routing with React Router
-- API client with Axios
+- API client 
 - Bootstrap integration (optional)
 - Clean folder structure
 - Component organization
@@ -21,7 +21,7 @@ A modern, production-ready React template with SCSS styling support.
 │   ├── Layout/         # Layout components
 │   ├── Pages/          # Page components
 │   ├── services/       # API services
-│   │   └── apiClient.js # Axios API client
+│   │   └── apiClient.js # API client
 │   ├── scss/           # SCSS files
 │   │   ├── base/       # Base styles, variables, mixins
 │   │   │   ├── _mixins.scss
@@ -121,6 +121,6 @@ The template uses React Router for navigation:
 
 ## Adding New Pages
 
-1. Create a new component in the `src/Pages/` directory
+1. Create a new Page in the `src/Pages/` directory
 2. Add styles in `src/scss/pages/`
 3. Add a route in `App.js`
